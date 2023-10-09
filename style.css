@@ -1,4 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e2b5ff; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(80, 80, 80, 0.65); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(54, 54, 54, 0.65); 
+}
+
 body{
-    background-color: black;
     position: relative;
+    background-image: linear-gradient(to right, #ffd04c, #ffb474, #ffa4ac, #ffa7df, #e2b5ff);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tytul{
+    font-size: 150px;
+    text-align: center;
+}
+
+#github{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 40px;
+}
+
+.kontener{
+    background-color: rgba(206, 206, 206, 0.62);
+    margin: 15px;
+    border-radius: 30px;
+}
+
+#fota{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50vh;
+    margin: 55px;
+    border-radius: 15px;
+    box-shadow: rgb(94, 94, 94) 0 0 30px;
+    float: left;
+}
+
+#tekst{
+    margin: 60px;
 }
