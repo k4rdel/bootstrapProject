@@ -20,6 +20,8 @@ body{
     position: relative;
     background-image: linear-gradient(to right, #ffd04c, #ffb474, #ffa4ac, #ffa7df, #e2b5ff);
     font-family: 'Barlow Semi Condensed', sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 #section1{
@@ -27,6 +29,24 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+#sections-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  
+#sections-container > div {
+    scroll-snap-align: start;
+  }
+
+#section1, #section2, #section3, #section4 {
+    padding: 100px 20px;
+    scroll-snap-stop: always;
+  }
 
 #tytul{
     font-size: 150px;
@@ -39,6 +59,7 @@ body{
     justify-content: center;
     height: auto;
     width: 40px;
+    cursor: pointer;
 }
 
 .kontener{
