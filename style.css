@@ -51,6 +51,12 @@ body{
         overflow: hidden;
     }
 }
+
+@media (max-width: 1500px) {
+    #fota{
+        opacity: 0;
+    }
+}
     
 #tytul{
     font-size: 15vh;
